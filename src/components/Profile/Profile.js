@@ -1,4 +1,6 @@
+import PropTypes from "prop-types";
 import styles from "./Profile.module.css";
+
 export default function Profile(props) {
   return (
     <div className={styles.profile}>
@@ -17,17 +19,27 @@ export default function Profile(props) {
       <ul className={styles.stats}>
         <li>
           <span className={styles.label}>Followers</span>
-          <span className={styles.quantity}>{" " + props.followers}</span>
+          <span className={styles.quantity}>{props.followers}</span>
         </li>
         <li>
           <span className={styles.label}>Views</span>
-          <span className={styles.quantity}>{" " + props.views}</span>
+          <span className={styles.quantity}>{props.views}</span>
         </li>
         <li>
           <span className={styles.label}>Likes</span>
-          <span className={styles.quantity}>{" " + props.likes}</span>
+          <span className={styles.quantity}>{props.likes}</span>
         </li>
       </ul>
     </div>
   );
 }
+
+Profile.propTypes = {
+  avatar: PropTypes.string,
+  username: PropTypes.string,
+  tag: PropTypes.string,
+  location: PropTypes.string,
+  followers: PropTypes.number,
+  views: PropTypes.number,
+  likes: PropTypes.number,
+};

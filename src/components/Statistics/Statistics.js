@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import styles from "./Statistics.module.css";
 
 export default function Statistics(props) {
@@ -29,3 +30,13 @@ function ListItem(props) {
     </li>
   );
 }
+
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.array,
+};
+
+ListItem.propTypes = {
+  label: PropTypes.string,
+  percentage: PropTypes.number,
+};
