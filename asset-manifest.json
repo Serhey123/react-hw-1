@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Serhey123/react-hw-1/static/css/main.cf7bcf65.css",
+    "main.js": "/Serhey123/react-hw-1/static/js/main.d30b8a17.js",
+    "index.html": "/Serhey123/react-hw-1/index.html",
+    "main.cf7bcf65.css.map": "/Serhey123/react-hw-1/static/css/main.cf7bcf65.css.map",
+    "main.d30b8a17.js.map": "/Serhey123/react-hw-1/static/js/main.d30b8a17.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cf7bcf65.css",
+    "static/js/main.d30b8a17.js"
+  ]
+}
